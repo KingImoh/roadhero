@@ -6,15 +6,17 @@
   import Navbar from "./components/Navbar.svelte";
   import Footer from "./components/Footer.svelte";
   let footerHeight = 0;
+
+  import LoginSignUp from "./components/LoginSignUp.svelte";
 </script>
 
-<div
+<!-- <div
   id="app"
   class="relative h-screen w-full overflow-x-hidden pb-[var(--footerH)] bg-[#F5F5F5]"
   style:--footerH="{footerHeight}px"
->
-  <slot />
-</div>
+> -->
+<slot />
+<!-- </div> -->
 
 <Footer bind:footerHeight />
-<!-- <Navbar /> -->
+<!-- <LoginSignUp /> -->

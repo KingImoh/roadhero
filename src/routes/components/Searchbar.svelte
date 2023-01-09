@@ -8,8 +8,12 @@
   // let active = false;
 </script>
 
+<svelte:head>
+  <meta name="theme-color" content="#123870" />
+</svelte:head>
+
 <header
-  class="flex flex-col container items-center h-fit w-screen items-center justify-between p-6 shadow-lg pb-8"
+  class="flex container items-center h-fit w-screen items-center justify-between p-6 shadow-lg"
   bind:this={header}
 >
   <!-- {#if !active}
@@ -52,11 +56,7 @@
     </div>
   </div> -->
 
-  <div class="ml-auto mb-4 square-40px bg-primaryBlue rounded-lg">
-    <div class="ic:baseline-notifications-none text-lg" />
-  </div>
-
-  <div class="w-full flex rounded overflow-hidden">
+  <div class="w-85% flex rounded-lg overflow-hidden">
     <div class="bg-secondaryGreen w-50px flex justify-between items-center">
       <div class="i-ri-search-line text-white mx-auto" />
     </div>
@@ -65,5 +65,12 @@
       type="text"
       placeholder="Search location..."
     />
+  </div>
+
+  <div
+    class="p-2 square-44px bg-primaryBlue rounded-lg flex items-center justify-center text-white"
+  >
+    <div class="i-ic-baseline-notifications-none text-xl fw400" />
+    <div class="bg-red square-1.5 rounded-full" />
   </div>
 </header>

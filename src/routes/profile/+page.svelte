@@ -23,36 +23,7 @@
   }
 </script>
 
-<div>
-  <div
-    class="text-2xl text-white h80 w-screen 
-  flex flex-col justify-center items-center bg-primaryBlue"
-  >
-    <div
-      class="bg-center bg-no-repeat bg-cover square-25 rounded-full mx-auto ring-secondaryGreen ring-2 ring-offset-4"
-      style:background-image="url('{profilePicture}')"
-    />
-
-    <div class="pt7 pb-2 text-xl max-w-80 flex items-center space-x-2xl">
-      Imoh Gbinije
-      <!-- svelte-ignore a11y-img-redundant-alt -->
-      <img
-        src={roadheroLogo}
-        alt="Profile Picture"
-        class="rounded-full w5 h5 mx-2 ring-secondaryGreen ring inline ring-offset"
-      />
-    </div>
-
-    <div class="text-sm text-grey opacity-50">princeemmanuel05@gmail.com</div>
-
-    <!-- <div class="top-4 right-4 absolute i-mingcute-edit-3-line text-xl">Edit</div> -->
-    <div class="btn btn-outline flex">
-      <div class="i-mingcute-edit-3-line" />
-      Edit profile
-    </div>
-  </div>
-
-  <!-- <div w-full>
+<!-- <div w-full>
   <div
     class={clsx(" sticky top-0 p-4 bg-white z-2 m-2 w-full", headerCollides && "shadow-lg")}
     bind:this={header}
@@ -85,5 +56,51 @@
   </div>
 </div> -->
 
-  <div class="version fw100 text-[#D1D1D1] flex justify-center">version 1.0</div>
+<div
+  class="text-2xl text-white h80 w-screen 
+  flex flex-col justify-center items-center bg-primaryBlue"
+>
+  <div
+    class="bg-center bg-no-repeat bg-cover square-20 rounded-full mx-auto ring-secondaryGreen ring-2 ring-offset-2"
+    style:background-image="url('{profilePicture}')"
+  />
+
+  <div class="pt7 pb-2 text-xl max-w-80 flex items-center space-x-2xl">
+    Imoh Gbinije
+    <!-- svelte-ignore a11y-img-redundant-alt -->
+    <img
+      src={roadheroLogo}
+      alt="Profile Picture"
+      class="rounded-full w5 h5 mx-2 ring-secondaryGreen ring inline ring-offset"
+    />
+  </div>
+
+  <div class="text-sm text-grey opacity-50">princeemmanuel05@gmail.com</div>
+
+  <div
+    class="flex border border-2 p-2 rounded-lg text-sm mt-6 border-secondaryGreen text-secondaryGreen space-x-2"
+  >
+    <div class="i-ic-outline-mode-edit text-lg" />
+    <div>Edit profile</div>
+  </div>
 </div>
+
+<div class="flex flex-col items-center space-y-10 p-4 pt-15">
+  <div class="w-85% shadow rounded-lg h-65px flex items-center bg-white">
+    <div class="i-ion-settings-outline mx-4 w-15%" />
+    <div class="fw300">Settings</div>
+  </div>
+
+  <div class="w-85% shadow rounded-lg h-65px flex items-center bg-white text-red">
+    <div class="i-ion-ios-log-out mx-4 w-15%" />
+    <div class="fw300">Log Out</div>
+  </div>
+
+  <div
+    class="w-70% shadow rounded-lg h-80px flex items-center justify-center bg-secondaryGreen text-white"
+  >
+    <div class="text-lg fw385">Report an Issue</div>
+  </div>
+</div>
+
+<div class="version my-10 fw100 text-[#D1D1D1] flex justify-center">version 0.1</div>
